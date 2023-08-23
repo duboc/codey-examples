@@ -9,7 +9,7 @@ sess = HTMLSession()
 #generate the documentation for the function bellow 
 
 
-chat_model = ChatModel.from_pretrained("chat-bison@001")
+chat_model = ChatModel.from_pretrained("codechat-bison@001")
 parameters = {
     "temperature": 1,
     "max_output_tokens": 256,

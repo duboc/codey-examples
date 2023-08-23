@@ -1,15 +1,16 @@
 import streamlit as st
 from requests_html import HTMLSession
 import requests
+import os
 import vertexai 
 from vertexai.preview.language_models import ChatModel, InputOutputTextPair
-vertexai.init(project="projectid", location="us-central1")
+vertexai.init(project=os.environ.get("PROJECT_ID"), location="us-central1")
 
 sess = HTMLSession()
 #generate the documentation for the function bellow 
 
 
-chat_model = ChatModel.from_pretrained("codechat-bison@001")
+chat_model = ChatModel.from_pretrained("chat-bison@001")
 parameters = {
     "temperature": 1,
     "max_output_tokens": 256,

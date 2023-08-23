@@ -3,12 +3,13 @@ import random
 import time
 import vertexai
 import requests
+import os 
 from vertexai.preview.language_models import ChatModel, InputOutputTextPair
 
 
-vertexai.init(project="projectid", location="us-central1")
+vertexai.init(project=os.environ.get("PROJECT_ID"), location="us-central1")
 
-chat_model = ChatModel.from_pretrained("codechat-bison@001")
+chat_model = ChatModel.from_pretrained("chat-bison@001")
 parameters = {
     "temperature": 1,
     "max_output_tokens": 1024,
@@ -16,7 +17,7 @@ parameters = {
     "top_k": 40
 }
 
-filename = "ifelse-wo-break"
+filename = "transcript-example.txt"
 with open(filename, "r") as f:
     contextTextFromFile = f.read()
 

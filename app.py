@@ -39,15 +39,6 @@ st.title('Vertex APIs')
 
 Prompt = st.text_area("Prompt", """aaaaaa""")
 
-
-meuPrompt = """check my app possible security issues and specify fix steps for me"""
-
-
 if st.button("Run"):
     st.markdown("### Result:")
     st.write(novoPrompt(Prompt))
-
-
-
-# if st.button("RunRequest"):
-#    st.markdown("### Result:")

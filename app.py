@@ -38,7 +38,7 @@ def novoPrompt(meuPrompt):
 
 st.title('Vertex APIs')
 
-Prompt = st.text_area("Prompt", """aaaaaa""")
+Prompt = st.text_area("Prompt", """You are a python senior developer. Following all the best practices available, rewrite my code.""")
 
 if st.button("Run"):
     st.markdown("### Result:")

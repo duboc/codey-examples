@@ -37,3 +37,14 @@ def write_a_function(temperature: float = 0.5) -> object:
     )
     print(f"Response from Model: {response.text}")
 ```
+
+
+## App.py Explanation
+
+This code is a simple example of how to use the Vertex AI APIs. It uses the ChatModel class to create a chat bot that can generate text responses to user prompts. 
+
+The code first initializes the Vertex AI SDK and then loads a pre-trained chat model. The model is then used to start a chat session with the user. The user can then type in prompts and the chat bot will generate responses.
+
+The code is divided into two main parts: the chat model and the user interface. The chat model is responsible for generating text responses to user prompts. The user interface is responsible for displaying the chat session to the user and allowing the user to type in prompts.
+
+The chat model is a language model that has been trained on a large dataset of text. This allows the model to generate text that is both coherent and informative. The user interface is a simple web page that displays the chat session and allows the user to type in prompts.

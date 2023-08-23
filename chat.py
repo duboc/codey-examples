@@ -33,7 +33,7 @@ def novoPrompt(meuPrompt):
     return response.text
 
 
-st.title("Simple chat")
+st.title("Simple chat with the transcript example loaded")
 
 # Initialize chat history
 if "messages" not in st.session_state:
